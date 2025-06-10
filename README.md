@@ -1,4 +1,4 @@
-# Customer Support AI Agent for Burj Khalifa Residences & Hotel
+# Customer Support AI Voice Agent 
 
 ## Project Overview
 
