@@ -51,10 +51,13 @@ This repository contains all the necessary files to understand and recreate the 
     * [`voice-agent-workflow.json`](workflows/voice-agent-workflow.json): The primary workflow for handling live user interactions.
     * [`info-loader-workflow.json`](workflows/info-loader-workflow.json): The workflow responsible for loading and embedding knowledge base content into Pinecone.
 * `images/`: Visual aids for understanding the n8n workflows.
-* 
+  
+
     * ![n8n Voice Agent Overview](images/n8n-voice-agent-overview.jpeg) - Overview of the voice agent workflow.
-    * 
+      
+  
     * ![n8n Info Loader Overview](images/n8n-info-loader-overview.jpeg) - Overview of the information loader workflow.
+      
    
 * `knowledge-base/`: The textual content of the hotel's knowledge base.
     * [`burj-khalifa-guide.md`](knowledge-base/burj-khalifa-guide.md): The comprehensive guide for Burj Khalifa Residences & Hotel information.
