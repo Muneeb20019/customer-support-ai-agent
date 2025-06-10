@@ -1,4 +1,4 @@
-# Customer Support AI Agent for Burj Khalifa Residences & Hotel
+# Customer Support Voice AI Agent 
 
 ## Project Overview
 
@@ -59,12 +59,6 @@ This repository contains all the necessary files to understand and recreate the 
 * `elevenlabs-prompts/`: Configuration details for the ElevenLabs AI agent.
     * [`elevenlabs-setup-guide.md`](elevenlabs-prompts/elevenlabs-setup-guide.md): A guide detailing the ElevenLabs agent setup, including the system prompt, initial greeting, and n8n tool configuration.
 
-## Demonstration
-
-Watch a quick demonstration of the Customer Support AI Agent in action:
-
-[![Demo Video Thumbnail](images/demo-thumbnail.jpeg)](YOUR_SCREENREC_SHAREABLE_LINK_HERE)
-*(Remember to replace `YOUR_SCREENREC_SHAREABLE_LINK_HERE` with your video's public link from ScreenRec if you have one. If you don't have a `demo-thumbnail.jpeg` image, you can remove `images/demo-thumbnail.jpeg` and just leave the alt text `Demo Video Thumbnail`.)*
 
 ## How to Set Up (High-Level Steps)
 
@@ -80,9 +74,3 @@ Watch a quick demonstration of the Customer Support AI Agent in action:
     * Follow the detailed steps in `elevenlabs-prompts/elevenlabs-setup-guide.md` to configure your ElevenLabs agent, including the system prompt, initial greeting, and the tool integration pointing to your n8n URL.
 3.  **Testing:** Interact with your ElevenLabs agent to test the end-to-end functionality.
 
-## Future Enhancements
-
-* Integration with a live booking system API for real-time reservations.
-* Support for multiple languages.
-* Advanced sentiment analysis for more empathetic responses.
-* Integration with a CRM system for personalized customer interactions.
