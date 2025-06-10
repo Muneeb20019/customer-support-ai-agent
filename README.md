@@ -1,4 +1,4 @@
-# Customer Support AI Voice Agent 
+# Customer Support AI Agent for Burj Khalifa Residences & Hotel
 
 ## Project Overview
 
@@ -38,7 +38,7 @@ Here's a high-level overview of how the Customer Support AI Agent works:
 The knowledge base is maintained and updated via a separate n8n workflow:
 
 1.  **Knowledge Base Source (Google Drive):** Hotel information is stored in a Google Doc.
-2.  **Data Loader (n8n - Info Loader):** The `info-loader-workflow.json` is triggered manually (or on a schedule) to download the Google Doc content from Google Drive.
+2.  **Data Loader (n8n - Info Loader):** The [`info-loader-workflow.json`](workflows/info-loader-workflow.json) is triggered manually (or on a schedule) to download the Google Doc content from Google Drive.
 3.  **Text Processing (n8n):** The document content is processed by a Default Data Loader and then split into smaller, manageable chunks using a Recursive Character Text Splitter.
 4.  **Embedding (n8n):** Each text chunk is converted into numerical vector embeddings using OpenAI Embeddings.
 5.  **Vector Storage (Pinecone):** These embeddings are then uploaded to the Pinecone vector database, making them searchable by the AI agent.
@@ -51,9 +51,9 @@ This repository contains all the necessary files to understand and recreate the 
     * [`voice-agent-workflow.json`](workflows/voice-agent-workflow.json): The primary workflow for handling live user interactions.
     * [`info-loader-workflow.json`](workflows/info-loader-workflow.json): The workflow responsible for loading and embedding knowledge base content into Pinecone.
 * `images/`: Visual aids for understanding the n8n workflows.
-    * [`n8n-voice-agent-overview.png`](images/n8n-voice-agent-overview.png): Overview of the voice agent workflow.
-    * [`n8n-info-loader-overview.png`](images/n8n-info-loader-overview.png): Overview of the information loader workflow.
-    * [`demo-thumbnail.png`]: (Optional) Thumbnail image for the demo video.
+    * `![n8n Voice Agent Overview](images/n8n-voice-agent-overview.png)`: Overview of the voice agent workflow.
+    * `![n8n Info Loader Overview](images/n8n-info-loader-overview.png)`: Overview of the information loader workflow.
+    * `![Demo Thumbnail](images/demo-thumbnail.png)`: (Optional) Thumbnail image for the demo video.
 * `knowledge-base/`: The textual content of the hotel's knowledge base.
     * [`burj-khalifa-guide.md`](knowledge-base/burj-khalifa-guide.md): The comprehensive guide for Burj Khalifa Residences & Hotel information.
 * `elevenlabs-prompts/`: Configuration details for the ElevenLabs AI agent.
@@ -63,8 +63,8 @@ This repository contains all the necessary files to understand and recreate the 
 
 Watch a quick demonstration of the Customer Support AI Agent in action:
 
-[![Demo Video Thumbnail](images/YOUR_DEMO_THUMBNAIL_FILENAME.png)](YOUR_SCREENREC_SHAREABLE_LINK_HERE)
-*(Remember to replace `YOUR_DEMO_THUMBNAIL_FILENAME.png` with the actual filename if you include one in your `images` folder, and `YOUR_SCREENREC_SHAREABLE_LINK_HERE` with your video's public link from ScreenRec).*
+[![Demo Video Thumbnail](images/demo-thumbnail.png)](YOUR_SCREENREC_SHAREABLE_LINK_HERE)
+*(Remember to replace `YOUR_SCREENREC_SHAREABLE_LINK_HERE` with your video's public link from ScreenRec if you have one. If you don't have a `demo-thumbnail.png` image, you can remove `images/demo-thumbnail.png` and just leave the alt text `Demo Video Thumbnail`.)*
 
 ## How to Set Up (High-Level Steps)
 
@@ -79,3 +79,10 @@ Watch a quick demonstration of the Customer Support AI Agent in action:
 2.  **ElevenLabs Setup:**
     * Follow the detailed steps in `elevenlabs-prompts/elevenlabs-setup-guide.md` to configure your ElevenLabs agent, including the system prompt, initial greeting, and the tool integration pointing to your n8n URL.
 3.  **Testing:** Interact with your ElevenLabs agent to test the end-to-end functionality.
+
+## Future Enhancements
+
+* Integration with a live booking system API for real-time reservations.
+* Support for multiple languages.
+* Advanced sentiment analysis for more empathetic responses.
+* Integration with a CRM system for personalized customer interactions.
