@@ -51,9 +51,9 @@ This repository contains all the necessary files to understand and recreate the 
     * [`voice-agent-workflow.json`](workflows/voice-agent-workflow.json): The primary workflow for handling live user interactions.
     * [`info-loader-workflow.json`](workflows/info-loader-workflow.json): The workflow responsible for loading and embedding knowledge base content into Pinecone.
 * `images/`: Visual aids for understanding the n8n workflows.
-    * `![n8n Voice Agent Overview](images/n8n-voice-agent-overview.png)`: Overview of the voice agent workflow.
-    * `![n8n Info Loader Overview](images/n8n-info-loader-overview.png)`: Overview of the information loader workflow.
-    * `![Demo Thumbnail](images/demo-thumbnail.png)`: (Optional) Thumbnail image for the demo video.
+    * `![n8n Voice Agent Overview](images/n8n-voice-agent-overview.jpeg)`: Overview of the voice agent workflow.
+    * `![n8n Info Loader Overview](images/n8n-info-loader-overview.jpeg)`: Overview of the information loader workflow.
+    * `![Demo Thumbnail](images/demo-thumbnail.jpeg)`: (Optional) Thumbnail image for the demo video.
 * `knowledge-base/`: The textual content of the hotel's knowledge base.
     * [`burj-khalifa-guide.md`](knowledge-base/burj-khalifa-guide.md): The comprehensive guide for Burj Khalifa Residences & Hotel information.
 * `elevenlabs-prompts/`: Configuration details for the ElevenLabs AI agent.
@@ -63,8 +63,8 @@ This repository contains all the necessary files to understand and recreate the 
 
 Watch a quick demonstration of the Customer Support AI Agent in action:
 
-[![Demo Video Thumbnail](images/demo-thumbnail.png)](YOUR_SCREENREC_SHAREABLE_LINK_HERE)
-*(Remember to replace `YOUR_SCREENREC_SHAREABLE_LINK_HERE` with your video's public link from ScreenRec if you have one. If you don't have a `demo-thumbnail.png` image, you can remove `images/demo-thumbnail.png` and just leave the alt text `Demo Video Thumbnail`.)*
+[![Demo Video Thumbnail](images/demo-thumbnail.jpeg)](YOUR_SCREENREC_SHAREABLE_LINK_HERE)
+*(Remember to replace `YOUR_SCREENREC_SHAREABLE_LINK_HERE` with your video's public link from ScreenRec if you have one. If you don't have a `demo-thumbnail.jpeg` image, you can remove `images/demo-thumbnail.jpeg` and just leave the alt text `Demo Video Thumbnail`.)*
 
 ## How to Set Up (High-Level Steps)
 
