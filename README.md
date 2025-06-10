@@ -1,4 +1,4 @@
-# Customer Support Voice AI Agent 
+# Customer Support Voice AI Agent
 
 ## Project Overview
 
@@ -51,9 +51,9 @@ This repository contains all the necessary files to understand and recreate the 
     * [`voice-agent-workflow.json`](workflows/voice-agent-workflow.json): The primary workflow for handling live user interactions.
     * [`info-loader-workflow.json`](workflows/info-loader-workflow.json): The workflow responsible for loading and embedding knowledge base content into Pinecone.
 * `images/`: Visual aids for understanding the n8n workflows.
-    * `![n8n Voice Agent Overview](images/n8n-voice-agent-overview.jpeg)`: Overview of the voice agent workflow.
-    * `![n8n Info Loader Overview](images/n8n-info-loader-overview.jpeg)`: Overview of the information loader workflow.
-    * `![Demo Thumbnail](images/demo-thumbnail.jpeg)`: (Optional) Thumbnail image for the demo video.
+    * ![n8n Voice Agent Overview](images/n8n-voice-agent-overview.jpeg) - Overview of the voice agent workflow.
+    * ![n8n Info Loader Overview](images/n8n-info-loader-overview.jpeg) - Overview of the information loader workflow.
+    * ![Demo Thumbnail](images/demo-thumbnail.jpeg) - (Optional) Thumbnail image for the demo video.
 * `knowledge-base/`: The textual content of the hotel's knowledge base.
     * [`burj-khalifa-guide.md`](knowledge-base/burj-khalifa-guide.md): The comprehensive guide for Burj Khalifa Residences & Hotel information.
 * `elevenlabs-prompts/`: Configuration details for the ElevenLabs AI agent.
@@ -73,4 +73,3 @@ This repository contains all the necessary files to understand and recreate the 
 2.  **ElevenLabs Setup:**
     * Follow the detailed steps in `elevenlabs-prompts/elevenlabs-setup-guide.md` to configure your ElevenLabs agent, including the system prompt, initial greeting, and the tool integration pointing to your n8n URL.
 3.  **Testing:** Interact with your ElevenLabs agent to test the end-to-end functionality.
-
